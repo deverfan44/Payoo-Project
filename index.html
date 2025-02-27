@@ -17,12 +17,34 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="outfin-font bg-slate-800">
-    <section class="max-w-md min-h-screen mx-auto bg-white">
-        <div class="login-div">
-            <div class="login-image">
-                <img src="./images/bg.png" alt="">
-                <img src="./images/Group.png" alt="">
-            </div>
+    <section class="max-w-md min-h-screen mx-auto bg-[#F4F5F7]">
+        <div class="min-h-screen flex flex-col justify-center">
+            <div class="login-div flex flex-col justify-center">
+                <div class="login-image h-[200px] overflow-hidden">
+                    <div class="login_curve_img relative flex justify-center">
+                        <img src="./images/bg.png" alt="" class="">
+                        <img src="./images/Group.png" class="absolute top-[15%] left-1/2 -translate-x-1/2" alt="">
+                    </div>
+                </div>
+    
+                <div class="login_form p-10 bg-white mx-5 rounded-2xl">
+                    <form action="#">
+                        <div class="tel_div flex flex-col gap-y-2">
+                            <label for="number">Mobile Number</label>
+                            <input type="number" id="number" placeholder="Enter your number" class="rounded-full py-3 px-4 bg-[#F4F5F7] focus:outline-none">
+                        </div>
+
+                        <div class="pin_div flex flex-col gap-y-2 mt-5">
+                            <label for="pin">4 digit pin</label>
+                            <input type="password" id="pin" placeholder="Enter your pin" class="rounded-full py-3 px-4 bg-[#F4F5F7] focus:outline-none">
+                        </div>
+
+                        <div class="login-btn mt-5">
+                            <button type="button" class="btn btn-primary w-full text-xl">Login</button>
+                        </div>
+                    </form>
+                </div>
+        </div>
         </div>
     </section>
 
